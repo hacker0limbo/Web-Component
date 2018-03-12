@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>鼠标滑过高亮显示效果</title>
+        <style>
+            .item {
+                /* opacity: 0.6; */
+                filter: grayscale(100%);
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+            .highlight {
+                /* opacity: 1; */
+                width: 150px;
+                height: 150px;
+                filter: none;
+                /* 该属性指定了某个属性发生变化的时间 */
+                transition: height 1s, width 1s
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <img class="item" src="./img/1.jpg" alt="">
+            <img class="item" src="./img/2.jpg" alt="">
+            <img class="item" src="./img/3.jpg" alt="">
+        </div>
+        <!-- scripts -->
+        <script src="../library.js"></script>
+        <script src="./hover-show.js"></script>
+    </body>
+</html>
