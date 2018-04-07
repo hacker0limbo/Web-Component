@@ -1,0 +1,36 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+#id-div-square {
+    margin: 0 auto;
+}
+
+.original {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.broaden {
+    width: 200px;
+}
+
+.higher {
+    height: 200px;
+}
+
+.color {
+    background-color: red;
+}
+
+.hide {
+    display: none;
+}
