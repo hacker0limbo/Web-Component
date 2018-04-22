@@ -1,0 +1,28 @@
+.skin div {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+}
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
+.black {
+    background: black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+    width: 82px;
+    line-height: 25px;
+    text-align: center;
+    border: 1px solid black;
+}

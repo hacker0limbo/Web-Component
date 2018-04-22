@@ -1,5 +1,4 @@
 var buttons = document.querySelector('.buttons');
-var buttonArr = buttons.children
 var square = document.querySelector('#id-div-square');
 var toAddClass = ['broaden', 'higher', 'color', 'hide', 'original']
 
