@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+    <button class="button-test" data-test='1'>测试 GuaAlert</button>
+    <button class="button-test" data-test='2'>测试 GuaAlert2</button>
+    <button class="button-test" data-test='3'>测试 GuaPrompt</button>
+    <button class="button-test" data-test='4'>测试 GuaActions</button>
+
+    <script src="utils.js"></script>
+    <script src='index.js'></script>
+</body>
+
+<script>
+    var body = e('body')
+    body.addEventListener('click', function(event) {
+        var target = event.target
+        if (target.classList.contains('button-test')) {
+            var testIndex = target.dataset.test
+            if (testIndex == '1') {
+                Alert('标题', '你好, 点击按钮可以关闭')
+            } else if (testIndex == '2') {
+                Alert2('测试 2', '点击不同按钮会有不同的回调参数, 在终端中查看', function(r) {
+                    log('你点击了按钮', r)
+                })
+            } else if (testIndex == '3') {
+                Prompt('输入框', function(r, value) {
+                    if (r) {
+                        log('输入了数据, ', value)
+                    } else {
+                        log('用户点了 cancel 取消输入')
+                    }
+                })
+            } else if (testIndex == '4') {
+                var actions = [
+                    '吃瓜',
+                    '吃饭',
+                    '休息',
+                ]
+                Actions('标题栏目', actions, function(index) {
+                    if (index == -1) {
+                        log('用户点了取消')
+                    } else {
+                        log('用户选择了 ', actions[index])
+                    }
+                })
+            }
+        }
+    })
+</script>
+
+</html>
