@@ -1,0 +1,103 @@
+html,
+body,
+#editor {
+    margin: 20px;
+    height: 100%;
+    font-family: '微软雅黑';
+    color: #333;
+}
+
+#id-title {
+    margin-left: 20px;
+}
+
+textarea,
+#editor div {
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+#id-content {
+    overflow: scroll;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+textarea {
+    border: none;
+    border-right: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    background-color: #f6f6f6;
+    font-size: 14px;
+    height: 100%;
+    font-family: 'Monaco', 'Menlo', courier, monospace;
+    padding: 20px;
+}
+
+code {
+    font-family: 'Monaco', 'Menlo';
+    padding: 2px 4px;
+    font-size: 80%;
+    background-color: #f9f2f4;
+    color: #c7254e;
+    border-radius: 4px;
+}
+
+a {
+    color: #3eaf7c;
+}
+
+blockquote {
+    background-color: #f3f5f7;
+    border-color: #42b983;
+    padding: 0.1rem 1.5rem;
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+    margin: 1rem 0;
+}
+
+img {
+    width: 10vw;
+}
+
+ins {
+    color: orange;
+}
+
+del {
+    color: grey;
+}
+
+table {
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-color: grey;
+}
+
+thead {
+    margin: 10px 0;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143
+}
+
+tr:nth-child(odd)>td {
+    background-color: #f9f9f9;
+}
+
+td {
+    padding: 8px;
+    line-height: 1.42857143;
+    border-top: 1px solid #ddd;
+    vertical-align: top;
+}
